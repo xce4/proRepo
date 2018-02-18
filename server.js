@@ -4,6 +4,7 @@
 // init project
 var express = require('express');
 var app = express();
+const puppeteer = require('puppeteer');
 
 // we've started you off with Express, 
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
@@ -13,7 +14,9 @@ app.use(express.static('public'));
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function (request, response) {
-  response.sendFile(__dirname + '/views/index.html');
+  puppeteer.launch()
+    .then(response.status(200).send('Puppeteer worked'))
+    .catch(error => response.status(500).send(error.message))
 });
 
 app.get("/dreams", function (request, response) {
