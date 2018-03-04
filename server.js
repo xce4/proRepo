@@ -1,20 +1,9 @@
-// server.js
-// where your node app starts
+const express = require('express'),
+    app = express(),
+    puppeteer = require('puppeteer');
 
-// init project
-var express = require('express');
-var app = express();
-const puppeteer = require('puppeteer');
-
-// we've started you off with Express, 
-// but feel free to use whatever libs or frameworks you'd like through `package.json`.
-
-// http://expressjs.com/en/starter/static-files.html
-app.use(express.static('public'));
-
-// http://expressjs.com/en/starter/basic-routing.html
-app.get("/", function (request, response) {
-  puppeteer.launch()
+app.get("/", (request, response) => {
+  puppeteer.launch({args: ['--no-sandbox']})
     .then(browser => response.status(200).type('html').send(`<p>Puppeteer worked: ${browser}</p>`))
     .catch(error => {
       const message = error.message.split('\n').join('</br>')
@@ -22,7 +11,6 @@ app.get("/", function (request, response) {
     })
 });
 
-// listen for requests :)
 var listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
