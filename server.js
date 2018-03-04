@@ -13,7 +13,7 @@ app.get("/", async (request, response) => {
     await browser.close();
     response.sendFile('puppeteer.png');
   } catch (error) {
-    console.log(error); // test
+    console.log(error);
   }
 });
 
