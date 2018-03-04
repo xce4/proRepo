@@ -3,7 +3,10 @@ const express = require('express'),
     puppeteer = require('puppeteer');
 
 app.get("/", async (request, response) => {
-  const browser = await puppeteer.launch({args: ['--no-sandbox']});
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox'],
+    executablePath: 'node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome'
+  });
   const page = await browser.newPage();
   await page.goto('https://www.nasdaq.com/symbol/goog');
   await page.screenshot({path: 'goog.png'});

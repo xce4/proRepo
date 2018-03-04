@@ -8,7 +8,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "install": "chmod +x node_modules/puppeteer/.local-chromium; node_modules/puppeteer/.local-chromium -v"
+    "install": "chmod +x node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome"
   },
   "dependencies": {
     "express": "^4.16.2",
