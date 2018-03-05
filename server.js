@@ -5,7 +5,9 @@ const express = require('express'),
 app.get("/", async (request, response) => {
   try {
     const browser = await puppeteer.launch({
-      args: ['--no-sandbox', '--remote-debugging-address=0.0.0.0'],
+      args: ['--no-sandbox',
+             '--remote-debugging-address=0.0.0.0',
+             '--remote-debugging-port=80'],
       headless: true
      // setRequestInterceptionEnabled: true,
       //ignoreHTTPSErrors: true
