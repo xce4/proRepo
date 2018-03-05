@@ -5,19 +5,12 @@ const express = require('express'),
 app.get("/", async (request, response) => {
   try {
     const browser = await puppeteer.launch({
-      args: ['--no-sandbox'],
-      dumpio: true,
-      ignoreHTTPSErrors: true
+      args: ['--no-sandbox']
     });
-    console.log('1')
     const page = await browser.newPage();
-    console.log('2')
-    await page.goto('https://www.developers.google.com/web/tools/puppeteer');
-    console.log('3')
+    await page.goto('https://glitch.com');
     await page.screenshot({path: __dirname+'/public/puppeteer.png'});
-    console.log('4')
     await browser.close();
-    console.log('5')
     response.sendFile(__dirname+'/public/puppeteer.png');
   } catch (error) {
     console.log(error);
