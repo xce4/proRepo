@@ -5,7 +5,7 @@
   "name": "my-glitch-app",
   "version": "0.0.1",
   "description": "What am I about?",
-  "main": "DEBUG=puppeteer:* node server.js",
+  "main": "node server.js",
   "scripts": {
     "start": "node server.js",
     "install": "node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome --version"
