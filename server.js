@@ -5,14 +5,15 @@ const express = require('express'),
 app.get("/", async (request, response) => {
   try {
     const browser = await puppeteer.launch({
-      args: ['--no-sandbox']//,
+      args: ['--no-sandbox', '--remote-debugging-address=0.0.0.0'],
+      headless: true
      // setRequestInterceptionEnabled: true,
       //ignoreHTTPSErrors: true
     });
     console.log('1')
     const page = await browser.newPage();
     console.log('2')
-    await page.goto('https://www.glitch.com/', {tineout: 0});
+    await page.goto('https://www.glitch.com/', {timeout: 0});
     console.log('3')
     await page.screenshot({path: __dirname+'/public/puppeteer.png'});
     console.log('4')
