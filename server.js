@@ -7,16 +7,21 @@ app.get("/", async (request, response) => {
     const browser = await puppeteer.launch({
       args: ['--no-sandbox']
     });
+    console.log('1')
     const page = await browser.newPage();
-    await page.goto('https://www.developers.google.com/web/tools/puppeteer');
-    await page.screenshot({path: 'puppeteer.png'});
+    console.log('2')
+    await page.goto('https://www.developers.google.com/');
+    console.log('3')
+    await page.screenshot({path: __dirname+'/public/puppeteer.png'});
+    console.log('4')
     await browser.close();
-    response.sendFile('puppeteer.png');
+    console.log('5')
+    response.sendFile(__dirname+'/public/puppeteer.png');
   } catch (error) {
     console.log(error);
   }
 });
 
-var listener = app.listen(4000, function () {
+var listener = app.listen(3000, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
