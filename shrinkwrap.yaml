@@ -68,7 +68,7 @@ packages:
   /concat-stream/1.6.0:
     dependencies:
       inherits: 2.0.3
-      readable-stream: 2.3.5
+      readable-stream: 2.3.4
       typedarray: 0.0.6
     dev: false
     engines:
@@ -460,7 +460,7 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha1-vNYMd9Prk83gBQKVw/N5OJvIj4k=
-  /readable-stream/2.3.5:
+  /readable-stream/2.3.4:
     dependencies:
       core-util-is: 1.0.2
       inherits: 2.0.3
@@ -471,7 +471,7 @@ packages:
       util-deprecate: 1.0.2
     dev: false
     resolution:
-      integrity: sha512-tK0yDhrkygt/knjowCUiWP9YdV7c5R+8cR0r/kt9ZhBU906Fs6RpQJCEilamRJj1Nx2rWI6LkW9gKqjTkshhEw==
+      integrity: sha512-vuYxeWYM+fde14+rajzqgeohAI7YoJcHE7kXDAc4Nk0EbuKnJfqtY9YtRkLo/tqkuF7MsBQRhPnPeyjYITp3ZQ==
   /rimraf/2.6.2:
     dependencies:
       glob: 7.1.2
@@ -601,4 +601,4 @@ shrinkwrapMinorVersion: 4
 shrinkwrapVersion: 3
 specifiers:
   express: ^4.16.2
-  puppeteer: '*'
+  puppeteer: ^1.1.0
