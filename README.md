@@ -1,1 +1,1 @@
-Test if [Puppeteer](https://github.com/GoogleChrome/puppeteer) is working on Glitch.
+A test of [Puppeteer](https://github.com/GoogleChrome/puppeteer) on Glitch, grabbing part of the Puppeteer homepage.
