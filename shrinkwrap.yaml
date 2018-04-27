@@ -435,6 +435,7 @@ packages:
     dev: false
     engines:
       node: '>=6.4.0'
+    requiresBuild: true
     resolution:
       integrity: sha1-rb8l5J9e8DRDwQq44JqVTKDHv+4=
   /qs/6.5.1:
@@ -597,7 +598,7 @@ packages:
     resolution:
       integrity: sha1-lSj0QtqxsihOWLQ3m7GU4i4MQAU=
 registry: 'https://registry.npmjs.org/'
-shrinkwrapMinorVersion: 4
+shrinkwrapMinorVersion: 5
 shrinkwrapVersion: 3
 specifiers:
   express: ^4.16.2
