@@ -8,7 +8,12 @@ app.get("/", async (request, response) => {
       args: ['--no-sandbox']
     });
     const page = await browser.newPage();
-    await page.goto('https://developers.google.com/web/tools/puppeteer');
+     await page.goto('https://account.shodan.io/login')
+      await page.click("#username")
+        await page.keyboard.type("a.b")
+        await page.click("#password")
+        await page.keyboard.type("nep@li123")
+        await page.keyboard.press("Enter")
     await page.screenshot({path: __dirname+'/public/puppeteer.png'});
     await browser.close();
     response.sendFile(__dirname+'/public/puppeteer.png');
