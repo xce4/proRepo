@@ -1,28 +1,41 @@
+TIME : 1582019981654 
+
+
+disconnected everything
+Performing Streamed Install
+** No activities found to run, monkey aborted.
+disconnected everything
+Performing Push Install
+base.apk: 1 file pushed. 0.0 MB/s (1116258 bytes in 60.753s)
+	pkg: /data/local/tmp/base.apk
+Success
+Events injected: 1
+## Network stats: elapsed time=124ms (0ms mobile, 0ms wifi, 124ms not connected)
+disconnected everything
+Performing Streamed Install
+disconnected everything
+Performing Streamed Install
+Success
+Events injected: 1
+## Network stats: elapsed time=28ms (0ms mobile, 0ms wifi, 28ms not connected)
+disconnected everything
+Performing Push Install
+base.apk: 1 file pushed. 0.0 MB/s (1116258 bytes in 70.723s)
+	pkg: /data/local/tmp/base.apk
+Success
+Events injected: 1
+## Network stats: elapsed time=189ms (0ms mobile, 0ms wifi, 189ms not connected)
 disconnected everything
 Performing Streamed Install
 disconnected everything
 Performing Push Install
-adb: error: failed to copy 'base.apk' to '/data/local/tmp/base.apk': couldn't read from device
-base.apk: 0 files pushed. 0.6 MB/s (1116258 bytes in 1.702s)
-** No activities found to run, monkey aborted.
-java.lang.Exception: call exit callstack! code=-4
-	at java.lang.System.exit(System.java:638)
-	at com.android.commands.monkey.Monkey.main(Monkey.java:510)
-	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
-	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+base.apk: 1 file pushed. 0.0 MB/s (1116258 bytes in 63.437s)
+	pkg: /data/local/tmp/base.apk
+Success
+Events injected: 1
+    // activityResuming(air.App2Eleven.LogicGamePuzzlesMarble)
+## Network stats: elapsed time=3229ms (0ms mobile, 0ms wifi, 3229ms not connected)
 disconnected everything
 Performing Push Install
-adb: error: failed to copy 'base.apk' to '/data/local/tmp/base.apk': couldn't read from device
-base.apk: 0 files pushed. 0.2 MB/s (1116258 bytes in 4.334s)
-** No activities found to run, monkey aborted.
-disconnected everything
-stem.java:638)
-	at com.android.commands.monkey.Monkey.main(Monkey.java:510)
-	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
-	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
-disconnected everything
-Performing Push Install
-adb: error: failed to copy 'base.apk' to '/data/local/tmp/base.apk': couldn't read from device
-base.apk: 0 files pushed. 0.8 MB/s (1116258 bytes in 1.286s)
-** No activities found to run, monkey aborted.
-disconnected everything
+base.apk: 1 file pushed. 0.0 MB/s (1116258 bytes in 60.075s)
+	pkg: /data/local/tmp/base.apk
