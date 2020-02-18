@@ -104,6 +104,6 @@ app.get("/second", async (req, res, next) => {
   res.json({ success: true });
 });
 
-var listener = app.listen(process.env.port, function() {
-  console.log("Your app is listening on port " + listener.address().port);
+var listener = app.listen(process.env.PORT, function() {
+  console.log("Your app is listening on port " + listener.address().PORT);
 });
