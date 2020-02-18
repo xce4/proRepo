@@ -113,7 +113,9 @@ app.get("/log",(req,res,next)=>{
 app.get("/second", async (req, res, next) => {
   fs.writeFileSync("log.txt",`TIME : ${Date.now()} \n\n\n`);  
   exec("python3 install.py>>log.txt", (err, stdout, stderr) => {});
-  res.json({ success: true });
+    var time=Number(fs.readFileSync("last.txt"));
+  if((time+86400000)>Date.now()) res.json({error:"Come back tommorow"})
+  else res.json({ success: true });
 });
 
 var listener = app.listen(process.env.PORT, function() {
