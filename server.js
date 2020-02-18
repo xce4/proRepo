@@ -14,10 +14,12 @@ app.get("/",(req,res)=>{
 })
 app.get("/do", async (req, res) => {
   var time=Number(fs.readFileSync("last.txt"));
-  
-  console.log(time)
-  return;
-  
+  if((time+86400000)>Date.now())
+    {
+      res.redirect("/second")
+      return;
+    }
+  fs.writeFileSync("last.txt",Date.now());  
   var firstUrl = null;
   async function doIt(change = false, url = null) {
     try {
@@ -105,7 +107,7 @@ app.get("/hi", (req, res, next) => {
 });
 
 app.get("/second", async (req, res, next) => {
-  exec("python3 install.py", (err, stdout, stderr) => {});
+  exec("python3 install.py>log.txt", (err, stdout, stderr) => {});
   res.json({ success: true });
 });
 

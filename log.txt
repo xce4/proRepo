@@ -1,0 +1,28 @@
+disconnected everything
+Performing Streamed Install
+disconnected everything
+Performing Push Install
+adb: error: failed to copy 'base.apk' to '/data/local/tmp/base.apk': couldn't read from device
+base.apk: 0 files pushed. 0.6 MB/s (1116258 bytes in 1.702s)
+** No activities found to run, monkey aborted.
+java.lang.Exception: call exit callstack! code=-4
+	at java.lang.System.exit(System.java:638)
+	at com.android.commands.monkey.Monkey.main(Monkey.java:510)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+disconnected everything
+Performing Push Install
+adb: error: failed to copy 'base.apk' to '/data/local/tmp/base.apk': couldn't read from device
+base.apk: 0 files pushed. 0.2 MB/s (1116258 bytes in 4.334s)
+** No activities found to run, monkey aborted.
+disconnected everything
+stem.java:638)
+	at com.android.commands.monkey.Monkey.main(Monkey.java:510)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+disconnected everything
+Performing Push Install
+adb: error: failed to copy 'base.apk' to '/data/local/tmp/base.apk': couldn't read from device
+base.apk: 0 files pushed. 0.8 MB/s (1116258 bytes in 1.286s)
+** No activities found to run, monkey aborted.
+disconnected everything
