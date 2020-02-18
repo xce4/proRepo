@@ -1,0 +1,494 @@
+<!DOCTYPE html><html lang="en"><head>
+<title>android debug bridge country:"TW" - Shodan Search</title>
+<meta charset="utf-8">
+<link rel="search" href="https://static.shodan.io/shodan/opensearch.xml" type="application/opensearchdescription+xml" title="Shodan">
+<link rel="author" href="https://plus.google.com/103529253434879216804/posts">
+<link rel="shortcut icon" href="https://static.shodan.io/shodan/img/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://static.shodan.io/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="https://static.shodan.io/font-awesome-4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://static.shodan.io/shodan/css/base-styles.css">
+<link rel="stylesheet" href="https://static.shodan.io/shodan/css/shodan.css">
+<link rel="dns-prefetch" href="//developer.shodan.io">
+<link rel="dns-prefetch" href="//account.shodan.io">
+<link rel="dns-prefetch" href="//blog.shodan.io">
+<link rel="dns-prefetch" href="//checkout.stripe.com">
+<link rel="dns-prefetch" href="//www.paypal.com">
+<link rel="dns-prefetch" href="//exploits.shodan.io">
+<link rel="stylesheet" href="https://static.shodan.io/jquery/css/jquery-jvectormap-1.2.2.css">
+<link rel="stylesheet" href="https://static.shodan.io/jquery/css/selectize.bootstrap2.css">
+</head>
+<body>
+<div class="quicknav">
+<ul style="opacity:1.0;padding:0;" class="pull-right">
+<li style="padding:0;"><a href="https://beta.shodan.io" style="font-weight:bold; background-color:#be473c; display:inline-block; padding: 2px 25px;">Try out the new beta website!</a>
+</li>
+<li id="help" style="padding:0;"><a href="https://help.shodan.io" style="font-weight:bold; background-color:#2488bf; display:inline-block; padding: 2px 25px;">Help Center</a>
+</li>
+</ul>
+<ul class="pull-right hidden-phone">
+<li id="api-key-show" style="cursor: pointer"><a>Show API Key</a>
+</li>
+<li id="api-key-content" style="display:none">API Key: ufYlLGFyLYlE2KEf63UTmFz2y0cY9Mmx</li>
+</ul>
+<ul>
+<li><a href="https://www.shodan.io">Shodan</a>
+</li>
+<li><a href="https://developer.shodan.io">Developers</a>
+</li>
+<li><a href="https://monitor.shodan.io">Monitor</a>
+</li>
+<li><a href="https://www.shodan.io/about/products">View All...</a>
+</li>
+</ul>
+<div class="clear"></div>
+</div>
+<div class="navbar navbar-top">
+<div class="navbar-inner">
+<div class="container-fluid"><a href="/home" class="brand"><img src="https://static.shodan.io/shodan/img/logo.png" alt="Shodan"></a>
+<div class="search-bar">
+<form action="/search" method="GET">
+<input type="text" name="query" id="search_input" autofocus="autofocus" value="android debug bridge country:&quot;TW&quot;" class="query">
+<button type="submit" class="btn btn-primary btn-small submit"><i class="icon-search icon-white"></i>
+</button>
+</form>
+</div>
+<ul class="nav">
+<li><a href="/home"><i class="fa fa-home"></i></a>
+</li>
+<li><a href="/explore">Explore</a>
+</li>
+<li><a href="/data">Downloads</a>
+</li>
+<li><a href="/report">Reports</a>
+</li>
+<li><a href="https://developer.shodan.io/pricing">Pricing</a>
+</li>
+<li><a href="https://enterprise.shodan.io">Enterprise Access</a>
+</li>
+</ul>
+<ul style="margin-right:-40px;" class="nav pull-right">
+<li><a href="https://account.shodan.io" class="account"><i class="fa fa-user">&nbsp;</i>My Account
+</a>
+</li>
+<li><a href="/store/member" class="store">Upgrade</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row-fluid">
+<div id="search-summary">
+<ul class="nav nav-pills">
+<li class="exploits"><a href="https://exploits.shodan.io/?q=android+debug+bridge+country%3A%22TW%22"><img src="https://static.shodan.io/exploits/img/favicon.png" style="padding-right: 5px;">Exploits
+</a>
+</li>
+<li class="maps"><a href="https://maps.shodan.io/#16.720385051693988/3.515625/3/satellite/android+debug+bridge+country%3A%22TW%22"><img src="https://static.shodan.io/maps/img/favicon.png" style="padding-right: 5px;">Maps
+</a>
+</li>
+<li class="nav-action nav-action-success"><a href="#tagSearchModal" data-toggle="modal" role="button" style="height:16px;"><i class="fa fa-tag">&nbsp;</i>Share Search
+</a>
+</li>
+<li class="nav-action"><a href="#downloadDataModal" data-toggle="modal" role="button" style="height:16px;"><i class="fa fa-download">&nbsp;</i>Download Results
+</a>
+</li>
+<li class="nav-action"><a href="#createReportModal" data-toggle="modal" role="button" style="height:16px;"><i class="fa fa-bar-chart">&nbsp;</i>Create Report
+</a>
+</li>
+</ul>
+</div>
+<div id="search-results">
+<div class="row-fluid">
+<div class="span3">
+<div id="search-summary-overlay" style="display: block;"><br><br><br><img src="https://static.shodan.io/shodan/img/loader-snake.gif"><br>Loading Statistics...
+</div>
+<div id="search-summary-content"></div>
+</div>
+<div class="span9">
+<div style="border:1px solid #ddd; border-left:5px solid #ddd;padding:5px 10px 5px 10px;background-color:#f7f7f7;display:inline-block;margin-bottom:10px"><strong>New Service:&nbsp;</strong>Keep track of what you have connected to the Internet. Check out
+<a href="https://monitor.shodan.io" style="font-weight:bold" target="_blank" rel="noopener noreferrer nofollow">Shodan Monitor</a>
+</div>
+<div class="search-result">
+<div class="ip"><a href="/host/59.127.179.134">59.127.179.134</a>
+</div>
+<div class="search-result-summary"><span>59-127-179-134.HINET-IP.hinet.net</span><br><a href="/search?query=android+debug+bridge+country%3A%22TW%22+org%3A%22HiNet%22" class="os">HiNet</a>
+<div></div><span>Added on 2020-02-18 02:07:23 GMT</span><br><img src="https://static.shodan.io/shodan/img/flags/16/TW.png" title="Taiwan"><a href="/search?query=android+debug+bridge+country%3A%22TW%22+country%3A%22TW%22" class="city">Taiwan</a>,
+<a href="/search?query=android+debug+bridge+country%3A%22TW%22+city%3A%22Kaohsiung%22" class="city">Kaohsiung</a>
+<div class="clear"></div>
+
+</div>
+
+
+
+<pre><strong class="highlight">Android</strong> <strong class="highlight">Debug</strong> <strong class="highlight">Bridge</strong>
+Name: redmi 3
+Model: redmi 3
+Device: x86
+</pre>
+<div class="clear"></div>
+</div>
+<div class="search-result">
+<div class="ip"><a href="/host/110.29.237.171">110.29.237.171</a>
+</div>
+<div class="search-result-summary"><span>110-29-237-171.adsl.fetnet.net</span><br><a href="/search?query=android+debug+bridge+country%3A%22TW%22+os%3A%22Windows+XP%22" class="os">Windows XP</a>
+<div></div><a href="/search?query=android+debug+bridge+country%3A%22TW%22+org%3A%22FarEasTone%22" class="os">FarEasTone</a>
+<div></div><span>Added on 2020-02-17 18:35:53 GMT</span><br><img src="https://static.shodan.io/shodan/img/flags/16/TW.png" title="Taiwan"><a href="/search?query=android+debug+bridge+country%3A%22TW%22+country%3A%22TW%22" class="city">Taiwan</a>
+<div class="clear"></div>
+<br><br><span style="color:white" class="badge">scanner</span>
+</div>
+
+
+
+<pre><strong class="highlight">Android</strong> <strong class="highlight">Debug</strong> <strong class="highlight">Bridge</strong>
+Name: tulip_ads
+Model: YF_XXXG
+Device: YoungFeel
+</pre>
+<div class="clear"></div>
+</div>
+<div class="search-result">
+<div class="ip"><a href="/host/114.47.181.5">114.47.181.5</a>
+</div>
+<div class="search-result-summary"><span>114-47-181-5.dynamic-ip.hinet.net</span><br><a href="/search?query=android+debug+bridge+country%3A%22TW%22+org%3A%22HiNet%22" class="os">HiNet</a>
+<div></div><span>Added on 2020-02-18 04:14:42 GMT</span><br><img src="https://static.shodan.io/shodan/img/flags/16/TW.png" title="Taiwan"><a href="/search?query=android+debug+bridge+country%3A%22TW%22+country%3A%22TW%22" class="city">Taiwan</a>,
+<a href="/search?query=android+debug+bridge+country%3A%22TW%22+city%3A%22Kaohsiung%22" class="city">Kaohsiung</a>
+<div class="clear"></div>
+
+</div>
+
+
+
+<pre><strong class="highlight">Android</strong> <strong class="highlight">Debug</strong> <strong class="highlight">Bridge</strong>
+Name: hlteuc
+Model: SAMSUNG-SM-N900A
+Device: hlteatt
+</pre>
+<div class="clear"></div>
+</div>
+<div class="search-result">
+<div class="ip"><a href="/host/123.195.117.70">123.195.117.70</a>
+</div>
+<div class="search-result-summary"><span>123-195-117-70.dynamic.kbronet.com.tw</span><br><a href="/search?query=android+debug+bridge+country%3A%22TW%22+org%3A%22kbro%22" class="os">kbro</a>
+<div></div><span>Added on 2020-02-17 18:13:09 GMT</span><br><img src="https://static.shodan.io/shodan/img/flags/16/TW.png" title="Taiwan"><a href="/search?query=android+debug+bridge+country%3A%22TW%22+country%3A%22TW%22" class="city">Taiwan</a>,
+<a href="/search?query=android+debug+bridge+country%3A%22TW%22+city%3A%22Changhua%22" class="city">Changhua</a>
+<div class="clear"></div>
+
+</div>
+
+
+
+<pre><strong class="highlight">Android</strong> <strong class="highlight">Debug</strong> <strong class="highlight">Bridge</strong>
+Name: p201
+Model: <strong class="highlight">Android</strong>
+Device: p201
+</pre>
+<div class="clear"></div>
+</div>
+<div class="search-result">
+<div class="ip"><a href="/host/36.228.126.44">36.228.126.44</a>
+</div>
+<div class="search-result-summary"><span>36-228-126-44.dynamic-ip.hinet.net</span><br><a href="/search?query=android+debug+bridge+country%3A%22TW%22+org%3A%22HiNet%22" class="os">HiNet</a>
+<div></div><span>Added on 2020-02-18 01:55:57 GMT</span><br><img src="https://static.shodan.io/shodan/img/flags/16/TW.png" title="Taiwan"><a href="/search?query=android+debug+bridge+country%3A%22TW%22+country%3A%22TW%22" class="city">Taiwan</a>,
+<a href="/search?query=android+debug+bridge+country%3A%22TW%22+city%3A%22Hsinchu%22" class="city">Hsinchu</a>
+<div class="clear"></div>
+
+</div>
+
+
+
+<pre><strong class="highlight">Android</strong> <strong class="highlight">Debug</strong> <strong class="highlight">Bridge</strong>
+Name: petrel_fvd_p1
+Model: EVBOX-3R
+Device: petrel-p1
+</pre>
+<div class="clear"></div>
+</div>
+<div class="search-result">
+<div class="ip"><a href="/host/113.61.144.18">113.61.144.18</a>
+</div>
+<div class="search-result-summary"><span>113-61-144-18.veetime.com</span><br><a href="/search?query=android+debug+bridge+country%3A%22TW%22+org%3A%22Vee+Time+Corp.%22" class="os">Vee Time Corp.</a>
+<div></div><span>Added on 2020-02-17 22:23:41 GMT</span><br><img src="https://static.shodan.io/shodan/img/flags/16/TW.png" title="Taiwan"><a href="/search?query=android+debug+bridge+country%3A%22TW%22+country%3A%22TW%22" class="city">Taiwan</a>
+<div class="clear"></div>
+
+</div>
+
+
+
+<pre><strong class="highlight">Android</strong> <strong class="highlight">Debug</strong> <strong class="highlight">Bridge</strong>
+Name: rk3036
+Model: rk3036
+Device: rk3036
+</pre>
+<div class="clear"></div>
+</div>
+<div class="search-result">
+<div class="ip"><a href="/host/59.115.13.5">59.115.13.5</a>
+</div>
+<div class="search-result-summary"><span>59-115-13-5.dynamic-ip.hinet.net</span><br><a href="/search?query=android+debug+bridge+country%3A%22TW%22+org%3A%22HiNet%22" class="os">HiNet</a>
+<div></div><span>Added on 2020-02-17 18:07:15 GMT</span><br><img src="https://static.shodan.io/shodan/img/flags/16/TW.png" title="Taiwan"><a href="/search?query=android+debug+bridge+country%3A%22TW%22+country%3A%22TW%22" class="city">Taiwan</a>,
+<a href="/search?query=android+debug+bridge+country%3A%22TW%22+city%3A%22Hualien%22" class="city">Hualien</a>
+<div class="clear"></div>
+
+</div>
+
+
+
+<pre><strong class="highlight">Android</strong> <strong class="highlight">Debug</strong> <strong class="highlight">Bridge</strong>
+Name: hlteuc
+Model: SAMSUNG-SM-N900A
+Device: hlteatt
+</pre>
+<div class="clear"></div>
+</div>
+<div class="search-result">
+<div class="ip"><a href="/host/111.67.61.129">111.67.61.129</a>
+</div>
+<div class="search-result-summary"><span>111-67-61-129.veetime.com</span><br><a href="/search?query=android+debug+bridge+country%3A%22TW%22+org%3A%22Vee+Time+Corp.%22" class="os">Vee Time Corp.</a>
+<div></div><span>Added on 2020-02-18 00:09:06 GMT</span><br><img src="https://static.shodan.io/shodan/img/flags/16/TW.png" title="Taiwan"><a href="/search?query=android+debug+bridge+country%3A%22TW%22+country%3A%22TW%22" class="city">Taiwan</a>,
+<a href="/search?query=android+debug+bridge+country%3A%22TW%22+city%3A%22Taichung%22" class="city">Taichung</a>
+<div class="clear"></div>
+
+</div>
+
+
+
+<pre><strong class="highlight">Android</strong> <strong class="highlight">Debug</strong> <strong class="highlight">Bridge</strong>
+Name: hlteuc
+Model: SAMSUNG-SM-N900A
+Device: hlteatt
+</pre>
+<div class="clear"></div>
+</div>
+<div class="search-result">
+<div class="ip"><a href="/host/61.58.115.218">61.58.115.218</a>
+</div>
+<div class="search-result-summary"><a href="/search?query=android+debug+bridge+country%3A%22TW%22+org%3A%22GCNet+%28Reach+%26+Range+Inc.%29%22" class="os">GCNet (Reach &amp; Range Inc.)</a>
+<div></div><span>Added on 2020-02-18 02:18:15 GMT</span><br><img src="https://static.shodan.io/shodan/img/flags/16/TW.png" title="Taiwan"><a href="/search?query=android+debug+bridge+country%3A%22TW%22+country%3A%22TW%22" class="city">Taiwan</a>
+<div class="clear"></div>
+
+</div>
+
+
+
+<pre><strong class="highlight">Android</strong> <strong class="highlight">Debug</strong> <strong class="highlight">Bridge</strong>
+Name: aosp_cranberry
+Model: SMART
+Device: cranberry
+</pre>
+<div class="clear"></div>
+</div>
+<div class="search-result">
+<div class="ip"><a href="/host/182.235.5.162">182.235.5.162</a>
+</div>
+<div class="search-result-summary"><span>host-162.5-235-182.cable.dynamic.kbtelecom.net</span><br><a href="/search?query=android+debug+bridge+country%3A%22TW%22+org%3A%22Hoshin+Multimedia+Center%22" class="os">Hoshin Multimedia Center</a>
+<div></div><span>Added on 2020-02-18 03:00:20 GMT</span><br><img src="https://static.shodan.io/shodan/img/flags/16/TW.png" title="Taiwan"><a href="/search?query=android+debug+bridge+country%3A%22TW%22+country%3A%22TW%22" class="city">Taiwan</a>,
+<a href="/search?query=android+debug+bridge+country%3A%22TW%22+city%3A%22Taipei%22" class="city">Taipei</a>
+<div class="clear"></div>
+<br><br><span style="color:white" class="badge">scanner</span>
+</div>
+
+
+
+<pre><strong class="highlight">Android</strong> <strong class="highlight">Debug</strong> <strong class="highlight">Bridge</strong>
+Name: aosp_mangosteen
+Model: 55V
+Device: mangosteen
+</pre>
+<div class="clear"></div>
+</div>
+<div class="pagination">
+<ul>
+<li><a href="/search?query=android+debug+bridge+country%3A%22TW%22&amp;page=1" class="btn">Previous</a>
+</li>
+<li><a href="/search?query=android+debug+bridge+country%3A%22TW%22&amp;page=3" class="btn">Next</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div id="downloadDataModal" tabindex="-1" role="dialog" aria-hidden="true" style="color:black" class="modal hide fade">
+<form style="margin:0" method="post" action="/data/export" class="form-horizontal">
+<input type="hidden" name="query" value="android debug bridge country:&quot;TW&quot;">
+<input type="hidden" name="csrf_token" value="ed65b6cb9851c94769ea789c65bc338259e9137d">
+<div class="modal-header">
+<h3 style="color:black"><i class="fa fa-download">&nbsp;</i>Download Data
+</h3>
+</div>
+<div class="modal-body">
+<p>Use export credits to download results at a rate of <strong>1 export credit = 10,000 results</strong></p>
+<p>You have 0 credits available which means you can download up to 0 results. <a href="/store/credits">Click here to buy credits</a></p>
+<div class="control-group">
+<label for="credits" class="control-label">Number of records:</label>
+<div class="controls">
+<div class="input-append">
+<input type="text" name="credits" pattern="\d*" required="required" class="span3"><span class="add-on">0,000</span>
+</div>
+</div>
+</div>
+<div class="control-group">
+<label for="filetype" class="control-label">File type:</label>
+<div class="controls">
+<select name="filetype">
+<option value="csv">CSV</option>
+<option value="json" selected="selected">JSON</option>
+<option value="xml">XML (deprecated)</option>
+</select>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button type="submit" class="btn btn-success">Export Data</button>
+<button data-dismiss="modal" aria-hidden="true" class="btn pull-left">Close</button>
+</div>
+</form>
+</div>
+<div id="createReportModal" tabindex="-1" role="dialog" aria-hidden="true" style="color:black" class="modal hide fade">
+<form style="margin:0" method="post" action="/report/_create" class="form-horizontal">
+<input type="hidden" name="query" value="android debug bridge country:&quot;TW&quot;">
+<input type="hidden" name="csrf_token" value="ed65b6cb9851c94769ea789c65bc338259e9137d">
+<div class="modal-header">
+<h3 style="color:black"><i class="fa fa-bar-chart">&nbsp;</i>Create Report
+</h3>
+</div>
+<div class="modal-body">
+<p>Create a report that provides statistics and breakdowns on various facets of your search query.</p>
+<div class="control-group">
+<label for="title" class="control-label">Title:</label>
+<div class="controls">
+<div class="input">
+<input type="text" name="title" required="required" class="span6">
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button type="submit" class="btn btn-success">Create Report</button>
+<button data-dismiss="modal" aria-hidden="true" class="btn pull-left">Close</button>
+</div>
+</form>
+</div>
+<div id="tagSearchModal" tabindex="-1" role="dialog" aria-hidden="true" style="color:black" class="modal hide fade">
+<form style="margin:0" method="post" action="/directory/_create" class="form-horizontal">
+<input type="hidden" name="query" value="android debug bridge country:&quot;TW&quot;">
+<input type="hidden" name="csrf_token" value="ed65b6cb9851c94769ea789c65bc338259e9137d">
+<div class="modal-header">
+<h3 style="color:black"><i class="fa fa-tag">&nbsp;</i>Share Search Query
+</h3>
+</div>
+<div class="modal-body">
+<p>Describe the results of the search query and share it with other Shodan users.</p>
+<div class="control-group">
+<label for="title" class="control-label">Title:</label>
+<div class="controls">
+<div class="input">
+<input type="text" name="title" required="required" class="span6">
+</div>
+</div>
+</div>
+<div class="control-group">
+<label for="title" class="control-label">Description:</label>
+<div class="controls">
+<div class="input"><textarea name="description" placeholder="Provide a more detailed description of the type of devices that are found..." class="span10"></textarea>
+</div>
+</div>
+</div>
+<div class="control-group">
+<label for="title" class="control-label">Tags:</label>
+<div class="controls">
+<div class="input">
+<input type="text" name="tags" placeholder="Comma-separated tags..." class="span10 selectize selectized" tabindex="-1" value="" style="display: none;"><div class="selectize-control span10 selectize multi plugin-restore_on_backspace plugin-remove_button"><div class="selectize-input items not-full" style=""><input type="text" autocomplete="off" tabindex="" placeholder="Comma-separated tags..." style="width: 139px;"></div><div class="selectize-dropdown multi span10 selectize plugin-restore_on_backspace plugin-remove_button" style="display: none; width: 100px; top: 16px; left: 0px;"><div class="selectize-dropdown-content"></div></div></div>
+</div>
+</div>
+</div><br>
+</div>
+<div class="modal-footer">
+<button type="submit" class="btn btn-success">Share</button>
+<button data-dismiss="modal" aria-hidden="true" class="btn pull-left">Close</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="footer muted">
+<p>© 2013-2020, All Rights Reserved - Shodan®</p>
+</div>
+<div id="contactUsModal" tabindex="-1" role="dialog" aria-hidden="true" style="color:black" class="modal hide fade">
+<div class="modal-header">
+<button data-dismiss="modal" aria-hidden="true" class="close">x</button>
+<h3 style="color:black">Contact Us</h3>
+</div>
+<div class="modal-body">
+<p>Have any questions or suggestions? Please contact us any time at the following locations:</p>
+<p>E-Mail:
+<strong>support@shodan.io</strong>
+</p>
+<p>Twitter:
+<strong><a href="https://twitter.com/shodanhq">@shodanhq</a></strong>
+</p>
+</div>
+<div class="modal-footer">
+<button data-dismiss="modal" aria-hidden="true" class="btn">Close</button>
+</div>
+</div>
+<script src="https://static.shodan.io/jquery/js/jquery.js"></script>
+<script src="https://static.shodan.io/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://static.shodan.io/shodan/js/shodan.js"></script>
+<script src="https://static.shodan.io/jquery/js/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="https://static.shodan.io/jquery/js/jquery-jvectormap-world-mill-en.js"></script>
+<script src="https://static.shodan.io/jquery/js/selectize.min.js"></script>
+<script type="text/javascript">$(document).ready(function () {
+    // If the summary content hasn't been loaded yet do so now
+    if ($('#search-summary-content').is(':empty')) {
+        // Show a loading mask
+        $('#search-summary-overlay').show();
+
+        // Grab the HTML with the summary info
+        $.ajax({
+            dataType: 'text',
+            url: "/search/_summary?query=android+debug+bridge+country%3A%22TW%22",
+        }).done(function(data) {
+            // Show the summary content area again
+            $('#search-summary-content').slideToggle();
+
+            // Fill in the HTML
+            $('#search-summary-content').html(data);
+        }).fail(function() {
+            // Show the summary content area again
+            $('#search-summary-content').slideToggle();
+
+            $('#search-summary-content').html("Oops, unable to load statistics. Please try again later!");
+        }).always(function() {
+            // Hide the loading mask again
+            $('#search-summary-overlay').hide();
+        });
+    }
+    else {
+        $('#search-summary-content').slideToggle();
+    }
+
+    $('.selectize').selectize({
+        plugins: ['restore_on_backspace', 'remove_button'],
+        delimiter: ',',
+        persist: false,
+        addPrecedence: false,
+        maxItems: 3,
+        create: function(input) {
+            return {
+                value: input,
+                text: input
+            }
+        }
+    });
+});
+
+</script>
+<script>$('#api-key-show').on('click', function() {
+    $('#api-key-show').hide();
+    $('#api-key-content').show();
+});
+
+</script>
+
+</body></html>

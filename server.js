@@ -13,6 +13,11 @@ app.get("/",(req,res)=>{
   res.send("yeah")
 })
 app.get("/do", async (req, res) => {
+  var time=Number(fs.readFileSync("last.txt"));
+  
+  console.log(time)
+  return;
+  
   var firstUrl = null;
   async function doIt(change = false, url = null) {
     try {
