@@ -1,41 +1,5 @@
-TIME : 1582019981654 
-
-
-disconnected everything
-Performing Streamed Install
-** No activities found to run, monkey aborted.
-disconnected everything
-Performing Push Install
-base.apk: 1 file pushed. 0.0 MB/s (1116258 bytes in 60.753s)
-	pkg: /data/local/tmp/base.apk
-Success
-Events injected: 1
-## Network stats: elapsed time=124ms (0ms mobile, 0ms wifi, 124ms not connected)
 disconnected everything
 Performing Streamed Install
 disconnected everything
-Performing Streamed Install
-Success
-Events injected: 1
-## Network stats: elapsed time=28ms (0ms mobile, 0ms wifi, 28ms not connected)
-disconnected everything
-Performing Push Install
-base.apk: 1 file pushed. 0.0 MB/s (1116258 bytes in 70.723s)
-	pkg: /data/local/tmp/base.apk
-Success
-Events injected: 1
-## Network stats: elapsed time=189ms (0ms mobile, 0ms wifi, 189ms not connected)
-disconnected everything
-Performing Streamed Install
-disconnected everything
-Performing Push Install
-base.apk: 1 file pushed. 0.0 MB/s (1116258 bytes in 63.437s)
-	pkg: /data/local/tmp/base.apk
-Success
-Events injected: 1
-    // activityResuming(air.App2Eleven.LogicGamePuzzlesMarble)
-## Network stats: elapsed time=3229ms (0ms mobile, 0ms wifi, 3229ms not connected)
-disconnected everything
-Performing Push Install
-base.apk: 1 file pushed. 0.0 MB/s (1116258 bytes in 60.075s)
-	pkg: /data/local/tmp/base.apk
+115.193.40.196
+39.67.103.161

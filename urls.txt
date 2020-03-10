@@ -1,4 +1,3 @@
-https://www.shodan.io/search?query=android+debug+bridge+country%3A%22US%22&page=2
 https://www.shodan.io/search?query=android+debug+bridge+country%3A%22BR%22
 https://www.shodan.io/search?query=android+debug+bridge+country%3A%22KR%22
 https://www.shodan.io/search?query=android+debug+bridge+country%3A%22HK%22
@@ -10,3 +9,4 @@ https://www.shodan.io/search?query=android+debug+bridge+country%3A%22KR%22&page=
 https://www.shodan.io/search?query=android+debug+bridge+country%3A%22HK%22&page=2
 https://www.shodan.io/search?query=android+debug+bridge+country%3A%22TW%22&page=2
 https://www.shodan.io/search?query=android+debug+bridge+country%3A%22CN%22&page=2
+https://www.shodan.io/search?query=android+debug+bridge+country%3A%22US%22&page=2
