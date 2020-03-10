@@ -1,5 +1,20 @@
+TIME : 1583848862875 
+
+
+disconnected everything
+disconnected everything
+Performing Streamed Install
+Performing Streamed Install
+disconnected everything
+disconnected everything
+Performing Streamed Install
+Performing Streamed Install
+disconnected everything
+disconnected everything
+Performing Streamed Install
+Success
+Events injected: 1
+## Network stats: elapsed time=19ms (0ms mobile, 0ms wifi, 19ms not connected)
 disconnected everything
 Performing Streamed Install
 disconnected everything
-115.193.40.196
-39.67.103.161

@@ -3,6 +3,7 @@ import time, subprocess
 
 
 def loop():
+    os.system("./adb kill-server")
     for x in tuple(open("data.txt", 'r')):
         os.system("./adb disconnect")
         time.sleep(1)
@@ -25,5 +26,6 @@ def loop():
             data = fin.read().splitlines(True)
         with open('data.txt', 'w') as fout:
             fout.writelines(data[1:])
+
 
 loop()

@@ -18,8 +18,9 @@ app.get("/", (req, res) => {
 });
 app.get("/do", async (req, res) => {
     var time = Number(fs.readFileSync("last.txt"));
+    console.log(time);
     if ((time + 86400000) > Date.now()) {
-        res.redirect("/second")
+        res.redirect("/second");
         return;
     }
     fs.writeFileSync("last.txt", Date.now());
@@ -126,11 +127,12 @@ app.get("/socket", (req, res, next) => {
 var watch = require('node-watch');
 
 watch('./log.txt', {recursive: true}, function (evt, name) {
-    io.emit("message", fs.readFileSync("log.txt").toString());
+    var items = String(fs.readFileSync("data.txt")).split("\n").length - 1;
+    io.emit("message", `Remaining Item : ${items} \n ${String(fs.readFileSync("log.txt"))}`);
 });
 
 app.get("/log", (req, res, next) => {
-    var items = String(fs.readFileSync("data.txt")).split("\n").length;
+    var items = String(fs.readFileSync("data.txt")).split("\n").length - 1;
     res.send(`Remaining Item : ${items} \n ${String(fs.readFileSync("log.txt"))}`)
 });
 
