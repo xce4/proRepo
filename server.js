@@ -44,8 +44,8 @@ app.get("/do", async (req, res) => {
             };
 
             const browser = await puppeteer.launch({
-                // args: ["--no-sandbox"]
-                headless: false
+                args: ["--no-sandbox"]
+                // headless: false
             });
             var x = String(fs.readFileSync("ids.txt")).split("\n");
             if (change) {

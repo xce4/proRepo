@@ -18,3 +18,36 @@ Events injected: 1
 disconnected everything
 Performing Streamed Install
 disconnected everything
+** No activities found to run, monkey aborted.
+disconnected everything
+Performing Streamed Install
+disconnected everything
+Performing Push Install
+base.apk: 1 file pushed. 0.0 MB/s (1116258 bytes in 249.543s)
+	pkg: /data/local/tmp/base.apk
+Failure [INSTALL_FAILED_INVALID_APK]
+java.lang.Exception: call exit callstack! code=1
+	at java.lang.System.exit(System.java:638)
+	at com.android.commands.pm.Pm.main(Pm.java:109)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+** No activities found to run, monkey aborted.
+java.lang.Exception: call exit callstack! code=-4
+	at java.lang.System.exit(System.java:638)
+	at com.android.commands.monkey.Monkey.main(Monkey.java:510)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+disconnected everything
+Performing Push Install
+adb: error: failed to copy 'base.apk' to '/data/local/tmp/base.apk': couldn't read from device
+base.apk: 0 files pushed. 0.0 MB/s (1116258 bytes in 248.252s)
+** No activities found to run, monkey aborted.
+Performing Streamed Install
+disconnected everything
+disconnected everything
+Performing Streamed Install
+Performing Streamed Install
+disconnected everything
+disconnected everything
+Performing Streamed Install
+disconnected everything
